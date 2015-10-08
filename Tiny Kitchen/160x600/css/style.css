@@ -3,18 +3,15 @@
 
 #container {
     position: absolute;
-    width:300px;
-    height:250px;
+    width:158px;
+    height:598px;
     border:solid;
     border-color:#000;
     border-width:1px;
     overflow:hidden;
 }
-#utensil3{
-    top:118px;
-    position: absolute;
-}
-#utensil1, #utensil2, #utensil4, #utensil5, #star1, #star2, #star3, #star4, #star5, #star6, #your, #tinykitchen, #thankyou, #f2Star1, #f2Star2, #f2Star3, #f2Star4, #f2Star5, #f2AndSoWill, #f2TheGuy, #f2SublettingIt, #f3Logo, #f3NyEats, #f3OrderNow{
+
+#star1, #star2, #star3, #star4, #star5, #star6, #your, #tinyKitchen, #willThankYou, #f2Star1, #f2Star2, #f2Star3, #f2Star4, #f2Star5, #f2And, #f2So, #f2Will, #f2The, #f2Guy, #f3Subletting, #f4Logo, #f4NyEats, #f4OrderNow{
     position: absolute;
     display:none;
     opacity:0;
