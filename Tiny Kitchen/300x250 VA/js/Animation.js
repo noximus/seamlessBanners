@@ -13,6 +13,15 @@ var BanTimeline = {
   your: document.getElementById("your"),
   tinykitchen: document.getElementById("tinykitchen"),
   thankyou: document.getElementById("thankyou"),
+  frame1Wrap: document.getElementById("frame1Wrap"),
+  f2AndSoWill: document.getElementById("f2AndSoWill"),
+  f2TheGuy: document.getElementById("f2TheGuy"),
+  f2SublettingIt: document.getElementById("f2SublettingIt"),
+  f2star1: document.getElementById("f2star1"),
+  f2star2: document.getElementById("f2star2"),
+  f2star3: document.getElementById("f2star3"),
+  f2star4: document.getElementById("f2star4"),
+  f2star5: document.getElementById("f2star5"),
 
   init: function () {
     // initial settings for banner frame 1.  In case banner needs to restart.  add as many as you can to CSS first so Banner doesn't jump
@@ -42,7 +51,8 @@ var BanTimeline = {
     // TweenLite.delayedCall(1, BanTimeline.frame2);
   },
   frame2: function () {
-    TweenLite.to(your, .2, {opacity:1, display: 'block', delay: 0, ease:Power4.easeOut});
+    TweenLite.to(frame1Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
+    TweenLite.to(f2AndSoWill, .2, {opacity:1, display: 'block', delay: .2, ease:Power4.easeOut});
 
     TweenLite.delayedCall(1.3, BanTimeline.frame3);
   },

@@ -10,14 +10,10 @@
     border-width:1px;
     overflow:hidden;
 }
-#utensil1, #utensil2, #utensil4, #utensil5{
-    display:none;
+#utensil1, #utensil2, #utensil3, #utensil4, #utensil5{
+    display:block;
     position: absolute;
-    opacity: 0;
-}
-#utensil3{
     top:-118px;
-    position: absolute;
 }
 #star1, #star2, #star3, #star4, #star5, #star6, #your, #tinykitchen, #thankyou{
     position: absolute;
