@@ -29,7 +29,7 @@ var BanTimeline = {
   init: function () {
     // initial settings for banner frame 1.  In case banner needs to restart.  add as many as you can to CSS first so Banner doesn't jump
       TweenLite.to(your, .4, {scaleX:0, scaleY:0});
-      TweenLite.to(f3OrderNow, .4, {scaleX:1.5, scaleY:1.5});
+      TweenLite.to(f3OrderNow, .4, {scaleX:0, scaleY:0});
     // run animation after init is done. 
     BanTimeline.frame1();
   },
@@ -70,7 +70,7 @@ var BanTimeline = {
     TweenLite.to(frame2Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
     TweenLite.to(f3Logo, .4, {opacity:1, display: 'block', delay: .3, ease:Power4.easeOut});
     TweenLite.to(f3NyEats, .4, {opacity:1, display: 'block', delay: .8, ease:Power4.easeOut});
-    TweenLite.to(f3OrderNow, .5, {opacity:1, display: 'block', scaleX:1, scaleY:1, delay: 1.3, ease:Power4.easeOut});
+    TweenLite.to(f3OrderNow, .5, {opacity:1, top:0, display: 'block', scaleX:1, scaleY:1, delay: 1.3, ease:Power4.easeOut});
   }
 };
 BanTimeline.init();
