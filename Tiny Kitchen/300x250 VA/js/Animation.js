@@ -29,6 +29,7 @@ var BanTimeline = {
   init: function () {
     // initial settings for banner frame 1.  In case banner needs to restart.  add as many as you can to CSS first so Banner doesn't jump
       TweenLite.to(your, .4, {scaleX:0, scaleY:0});
+      TweenLite.to(f3OrderNow, .4, {scaleX:1.5, scaleY:1.5});
     // run animation after init is done. 
     BanTimeline.frame1();
   },
@@ -63,20 +64,13 @@ var BanTimeline = {
     TweenLite.to(f2Star4, .2, {opacity:1, display: 'block', delay: .9, ease:Power4.easeOut});
     TweenLite.to(f2Star5, .2, {opacity:1, display: 'block', delay: 1, ease:Power4.easeOut});
     TweenLite.to(f2Star1, .2, {opacity:1, display: 'block', delay: 1.1, ease:Power4.easeOut});
-    // TweenLite.delayedCall(1.3, BanTimeline.frame3);
+    TweenLite.delayedCall(3.5, BanTimeline.frame3);
   },
   frame3: function () {
-    TweenLite.to(a, .2, {opacity:1, display: 'block', delay: 0, ease:Power5.easeOut});
-
-    TweenLite.delayedCall(3, BanTimeline.frame4);
-  },
-  frame4: function () {
-    TweenLite.to(f4_img1, 2, {opacity:1, display: 'block', delay: 0, ease: Quad.easeOut});
-    
-    TweenLite.delayedCall(3, BanTimeline.frame5);
-  },
-  frame5: function () {
-    TweenLite.to(f5_img1, 2, {opacity:1, display: 'block', delay: 0, ease: Quad.easeOut});
+    TweenLite.to(frame2Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
+    TweenLite.to(f3Logo, .4, {opacity:1, display: 'block', delay: .3, ease:Power4.easeOut});
+    TweenLite.to(f3NyEats, .4, {opacity:1, display: 'block', delay: .8, ease:Power4.easeOut});
+    TweenLite.to(f3OrderNow, .5, {opacity:1, display: 'block', scaleX:1, scaleY:1, delay: 1.3, ease:Power4.easeOut});
   }
 };
 BanTimeline.init();
