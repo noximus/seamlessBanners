@@ -19,7 +19,7 @@
     top:-118px;
     position: absolute;
 }
-#star1, #star2, #star3, #star4, #star5, #star6, #your, #tinykitchen, #thankyou{
+#star1, #star2, #star3, #star4, #star5, #star6, #your, #tinykitchen, #thankyou, #f2Star1, #f2Star2, #f2Star3, #f2Star4, #f2Star5, #f2AndSoWill, #f2TheGuy, #f2SublettingIt{
     position: absolute;
     display:none;
     opacity:0;
