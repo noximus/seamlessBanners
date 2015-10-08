@@ -24,9 +24,9 @@ var BanTimeline = {
     
   },
   frame1: function () {
-    TweenLite.to(your, .4, {opacity:1, display: 'block', delay:.2, ease:Power4.easeOut});
-    TweenLite.to(tinykitchen, .4, {opacity:1, display: 'block', delay:.3, ease:Power4.easeOut});
-    TweenLite.to(thankyou, .4, {opacity:1, display: 'block', delay:.5, ease:Power4.easeOut});
+    TweenLite.to(your, .4, {opacity:1, display: 'block', delay:.2, ease:Power1.easeOut});
+    TweenLite.to(tinykitchen, .4, {opacity:1, display: 'block', delay:.3, ease:Power1.easeOut});
+    TweenLite.to(thankyou, .4, {opacity:1, display: 'block', delay:.5, ease:Power1.easeOut});
     TweenLite.to(utensil1, .4, {top:0, delay:.7, ease:Power4.easeOut});
     TweenLite.to(utensil2, .4, {top:0, delay:.8, ease:Power4.easeOut});
     TweenLite.to(utensil3, .4, {top:0, delay:.9, ease:Power4.easeOut});
