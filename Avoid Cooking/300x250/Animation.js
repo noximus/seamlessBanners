@@ -30,6 +30,7 @@ var home_animation = {
     TweenLite.to(f2_Img02, 0, {left:-100});
     TweenLite.to(f2_Img03, 0, {left:300});
     TweenLite.to(f2_Img04, 0, {left:300});
+    TweenLite.to(order_now, 0, {opacity:1, top:250, scaleX:0, scaleY:0});  
     home_animation.frame1();
   },
   reset: function () {    
