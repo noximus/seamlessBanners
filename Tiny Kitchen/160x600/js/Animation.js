@@ -61,7 +61,7 @@ var BanTimeline = {
     TweenLite.to(frame2Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
     TweenLite.to(f3Subletting, .2, {opacity:1, display:'block', delay:.2});
     TweenLite.to(f3Subletting, 2.3, {left:-460, delay: 1, ease:Power1.easeInOut});
-    TweenLite.delayedCall(4.5, BanTimeline.frame4);
+    TweenLite.delayedCall(4.7, BanTimeline.frame4);
   },
   frame4: function () {
     TweenLite.to(frame3Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
