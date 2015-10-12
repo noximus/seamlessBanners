@@ -7,10 +7,10 @@ var home_animation = {
   f1_Img02: document.getElementById("f1_Img02"),
   f1_Img03: document.getElementById("f1_Img03"),
   f1_Img04: document.getElementById("f1_Img04"),
-  f1_Txt01: document.getElementById("f1_Txt01"),
-  f1_Txt02: document.getElementById("f1_Txt02"),
-  f1_Txt03: document.getElementById("f1_Txt03"),
-  f1_Txt04: document.getElementById("f1_Txt04"),  
+  f1_txt01: document.getElementById("f1_txt01"),
+  f1_txt02: document.getElementById("f1_txt02"),
+  f1_txt03: document.getElementById("f1_txt03"),
+  f1_txt04: document.getElementById("f1_txt04"),  
   f2_Img01: document.getElementById("f2_Img01"),
   f2_Img02: document.getElementById("f2_Img02"),
   f2_Img03: document.getElementById("f2_Img03"),
@@ -41,10 +41,10 @@ var home_animation = {
     TweenLite.to(f1_Img03, .5, {opacity:1, delay: 0, left:0, ease: Expo.easeOut});
     TweenLite.to(f1_Img04, .5, {opacity:1, delay: .2, left:0, ease: Expo.easeOut});
 
-    TweenLite.to(f1_Txt01, .5, {opacity:1, delay: .7, ease: Expo.easeOut});
-    TweenLite.to(f1_Txt02, .5, {opacity:1, delay: .6, ease: Expo.easeOut});
-    TweenLite.to(f1_Txt03, .5, {opacity:1, delay: .5, ease: Expo.easeOut});
-    TweenLite.to(f1_Txt04, .5, {opacity:1, delay: .4, ease: Expo.easeOut});
+    TweenLite.to(f1_txt01, .5, {opacity:1, delay: .7, ease: Expo.easeOut});
+    TweenLite.to(f1_txt02, .5, {opacity:1, delay: .6, ease: Expo.easeOut});
+    TweenLite.to(f1_txt03, .5, {opacity:1, delay: .5, ease: Expo.easeOut});
+    TweenLite.to(f1_txt04, .5, {opacity:1, delay: .4, ease: Expo.easeOut});
     
     // Exit
     // TweenLite.to(Frame1, 0.2, {opacity:0, delay: 2.8});
@@ -56,10 +56,10 @@ var home_animation = {
     TweenLite.to(f1_Img03, .5, {opacity:1, top:-30, ease: Expo.easeIn});
     TweenLite.to(f1_Img04, .5, {opacity:1, delay: .2, top:-30, ease: Expo.easeIn});
 
-    TweenLite.to(f1_Txt01, .3, {opacity:0, delay: .3, ease: Expo.easeOut});
-    TweenLite.to(f1_Txt02, .3, {opacity:0, delay: .2, ease: Expo.easeOut});
-    TweenLite.to(f1_Txt03, .3, {opacity:0, delay: .1, ease: Expo.easeOut});
-    TweenLite.to(f1_Txt04, .3, {opacity:0, delay: 0, ease: Expo.easeOut});
+    TweenLite.to(f1_txt01, .3, {opacity:0, delay: .3, ease: Expo.easeOut});
+    TweenLite.to(f1_txt02, .3, {opacity:0, delay: .2, ease: Expo.easeOut});
+    TweenLite.to(f1_txt03, .3, {opacity:0, delay: .1, ease: Expo.easeOut});
+    TweenLite.to(f1_txt04, .3, {opacity:0, delay: 0, ease: Expo.easeOut});
 
     TweenLite.to(f1_Img01, .5, {opacity:1, delay: .7, top:-24, ease: Expo.easeIn});
     TweenLite.to(f1_Img02, .5, {opacity:1, delay: .9, top:-24, ease: Expo.easeIn});
@@ -70,14 +70,14 @@ var home_animation = {
     TweenLite.delayedCall(1, home_animation.frame2);
   },
   frame2: function () {
-    TweenLite.to(f2_Txt01, .5, {opacity:1, delay: .7, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt02, .5, {opacity:1, delay: .6, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt03, .5, {opacity:1, delay: .5, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt04, .5, {opacity:1, delay: .4, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt05, .5, {opacity:1, delay: 1, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt06, .5, {opacity:1, delay: .9, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt07, .5, {opacity:1, delay: .8, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt08, .5, {opacity:1, delay: .7, ease: Expo.easeOut});
+    TweenLite.to(f2_txt01, .5, {opacity:1, delay: .7, ease: Expo.easeOut});
+    TweenLite.to(f2_txt02, .5, {opacity:1, delay: .6, ease: Expo.easeOut});
+    TweenLite.to(f2_txt03, .5, {opacity:1, delay: .5, ease: Expo.easeOut});
+    TweenLite.to(f2_txt04, .5, {opacity:1, delay: .4, ease: Expo.easeOut});
+    TweenLite.to(f2_txt05, .5, {opacity:1, delay: 1, ease: Expo.easeOut});
+    TweenLite.to(f2_txt06, .5, {opacity:1, delay: .9, ease: Expo.easeOut});
+    TweenLite.to(f2_txt07, .5, {opacity:1, delay: .8, ease: Expo.easeOut});
+    TweenLite.to(f2_txt08, .5, {opacity:1, delay: .7, ease: Expo.easeOut});
     
     // Exit
     TweenLite.delayedCall(3, home_animation.frame2Outro);
@@ -88,14 +88,14 @@ var home_animation = {
     TweenLite.to(f1_Img03, .5, {opacity:0, delay: .2, top:-30, ease: Expo.easeIn});
     TweenLite.to(f1_Img04, .5, {opacity:0, delay: .4, top:-30, ease: Expo.easeIn});
 
-    TweenLite.to(f2_Txt01, .3, {opacity:0, delay: .3, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt02, .3, {opacity:0, delay: .2, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt03, .3, {opacity:0, delay: .1, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt04, .3, {opacity:0, delay: 0, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt05, .3, {opacity:0, delay: .3, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt06, .3, {opacity:0, delay: .2, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt07, .3, {opacity:0, delay: .1, ease: Expo.easeOut});
-    TweenLite.to(f2_Txt08, .3, {opacity:0, delay: 0, ease: Expo.easeOut});
+    TweenLite.to(f2_txt01, .3, {opacity:0, delay: .3, ease: Expo.easeOut});
+    TweenLite.to(f2_txt02, .3, {opacity:0, delay: .2, ease: Expo.easeOut});
+    TweenLite.to(f2_txt03, .3, {opacity:0, delay: .1, ease: Expo.easeOut});
+    TweenLite.to(f2_txt04, .3, {opacity:0, delay: 0, ease: Expo.easeOut});
+    TweenLite.to(f2_txt05, .3, {opacity:0, delay: .3, ease: Expo.easeOut});
+    TweenLite.to(f2_txt06, .3, {opacity:0, delay: .2, ease: Expo.easeOut});
+    TweenLite.to(f2_txt07, .3, {opacity:0, delay: .1, ease: Expo.easeOut});
+    TweenLite.to(f2_txt08, .3, {opacity:0, delay: 0, ease: Expo.easeOut});
 
     TweenLite.to(Frame1, 0.5, {opacity:0, delay: 2.8});
     TweenLite.delayedCall(1, home_animation.frame3);
