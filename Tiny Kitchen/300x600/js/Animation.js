@@ -13,8 +13,16 @@ var BanTimeline = {
   your: document.getElementById("your"),
   tinykitchen: document.getElementById("tinykitchen"),
   thankyou: document.getElementById("thankyou"),
-
+  bind: function (elem, eventName, callback) {if (elem.addEventListener) {elem.addEventListener(eventName, callback, false);}else if (elem.attachEvent) {var eID = elem.attachEvent('on'+ eventName, callback);boundEvents[eID] = { name: eventName, callback: callback };}},
   init: function () {
+    // CTA BTN CLICKTAG //
+    BanTimeline.bind(document.getElementById('click_screen'), 'click', function(e) 
+    {
+      e.preventDefault();
+      Enabler.exit("clickTag1");
+    });
+    document.getElementById("container").style.display = "block";
+
     // initial settings for banner frame 1.  In case banner needs to restart.  add as many as you can to CSS first so Banner doesn't jump
 
     // run animation after init is done. 
@@ -60,4 +68,6 @@ var BanTimeline = {
     TweenLite.to(f5_img1, 2, {opacity:1, display: 'block', delay: 0, ease: Quad.easeOut});
   }
 };
-BanTimeline.init();
+// If true, start function. If false, listen for INIT.
+window.onload = function() {if (Enabler.isInitialized()) {enablerInitHandler();} else {Enabler.addEventListener(studio.events.StudioEvent.INIT,enablerInitHandler);}}
+function enablerInitHandler(){BanTimeline.init();}
