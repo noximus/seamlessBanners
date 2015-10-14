@@ -3,8 +3,8 @@
 
 #container {
     position: absolute;
-    width:158px;
-    height:598px;
+    width:726px;
+    height:88px;
     border:solid;
     border-color:#000;
     border-width:1px;
@@ -20,7 +20,7 @@
     position: absolute;
     top:0px;
     background: #038c8e;
-    width:160px;
-    height:600px;
+    width:728px;
+    height:90px;
     z-index: -4;
 }
