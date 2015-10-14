@@ -9,6 +9,7 @@
     border-color:#000;
     border-width:1px;
     overflow:hidden;
+    cursor: pointer;
 }
 
 #f2Star1, #f2Star2, #f2Star3, #your, #tinyKitchen, #f2willThankYou, #f3andSoWill, #f3theGuy, #f4Subletting, #f5Logo, #f5NyEats, #f5OrderNow{

@@ -9,6 +9,7 @@
     border-color:#000;
     border-width:1px;
     overflow:hidden;
+    cursor: pointer;
 }
 #utensil3{
     top:-118px;
