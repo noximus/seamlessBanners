@@ -10,12 +10,7 @@
     border-width:1px;
     overflow:hidden;
 }
-#utensil1, #utensil2, #utensil3, #utensil4, #utensil5{
-    display:block;
-    position: absolute;
-    top:-118px;
-}
-#star1, #star2, #star3, #star4, #star5, #star6, #your, #tinykitchen, #thankyou{
+#star1, #star2, #star3, #star4, #star5, #star6, #your, #tinyKitchen, #willThankYou, #f2_star1, #f2_star2, #f2_star3, #f2_star4, #f2_star5, #f2And, #f2So, #f2Will, #f2The, #f2Guy, #f3_star1, #f3_star2, #f3_star3, #f3Subletting, #f4Logo, #f4NyEats, #f4OrderNow{
     position: absolute;
     display:none;
     opacity:0;
