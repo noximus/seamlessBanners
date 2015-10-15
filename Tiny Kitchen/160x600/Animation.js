@@ -45,12 +45,12 @@ var BanTimeline = {
   },
   frame1: function () {
     TweenLite.to(your, .2, {opacity:1, display: 'block', scaleX:1, scaleY:1, delay:.2, ease:Power1.easeOut});
-    TweenLite.to(tinyKitchen, .2, {opacity:1, display: 'block', delay:.3, ease:Power1.easeOut});
-    TweenLite.to(willThankYou, .2, {opacity:1, display: 'block', delay:.4, ease:Power1.easeOut});
-    TweenLite.to(star3, .2, {display:'block', opacity:1, delay:.8, ease:Power4.easeOut});
-    TweenLite.to(star1, .2, {display:'block', opacity:1, delay:.9, ease:Power4.easeOut});
-    TweenLite.to(star2, .5, {display:'block', opacity:1, delay:1, ease:Power4.easeOut});
-    TweenLite.to(star4, .2, {display:'block', opacity:1, delay:1.1, ease:Power4.easeOut});
+    TweenLite.to(tinyKitchen, .2, {opacity:1, display: 'block', delay:.6, ease:Power1.easeOut});
+    TweenLite.to(willThankYou, .2, {opacity:1, display: 'block', delay:1, ease:Power1.easeOut});
+    TweenLite.to(star3, .2, {display:'block', opacity:1, delay:1.2, ease:Power4.easeOut});
+    TweenLite.to(star1, .2, {display:'block', opacity:1, delay:1.3, ease:Power4.easeOut});
+    TweenLite.to(star2, .5, {display:'block', opacity:1, delay:1.4, ease:Power4.easeOut});
+    TweenLite.to(star4, .2, {display:'block', opacity:1, delay:1.5, ease:Power4.easeOut});
     TweenLite.delayedCall(3.5, BanTimeline.frame2);
   },
   frame2: function () {
