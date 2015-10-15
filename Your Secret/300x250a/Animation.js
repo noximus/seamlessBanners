@@ -10,8 +10,13 @@ var home_animation = {
       Enabler.exit("clickTag1");
     });
     document.getElementById("container").style.display = "block";
+  TweenLite.to(and, 0.5, {opacity:0, scaleX:10, scaleY:10});  
+  TweenLite.to(order_now, 0, {opacity:1, scaleX:0, scaleY:0});
+  TweenLite.to(is, 0.5, {scaleX:1.5, scaleY:1.5});
+  TweenLite.to(with_text, 0.5, {scaleX:1.5, scaleY:1.5});  
+  TweenLite.to(safe, 0.5, {scaleX:1.5, scaleY:1.5});
+  TweenLite.to(us, 0.5, {scaleX:1.5, scaleY:1.5});
 
-  TweenLite.to(order_now, 0, {opacity:1, scaleX:0, scaleY:0});  
     home_animation.frame1();
   },
   reset: function () {    
@@ -45,9 +50,9 @@ var home_animation = {
   frame3: function () {
     TweenLite.to(ThreeAM, 0.5, {opacity:1, delay:0});
     TweenLite.to(dumpling, 0.5, {opacity:1, delay:0.1});
-    TweenLite.to(and, 0.5, {opacity:1, delay:0.5});  
-    TweenLite.to(donuts, 0.5, {opacity:1, delay:1});
-    TweenLite.to(order, 0.5, {opacity:1, delay:1.1});
+    TweenLite.to(and, 0.5, {scaleX:1, scaleY:1,opacity:1, delay:0.5});  
+    TweenLite.to(donuts, 0.5, {opacity:1, delay:1.1});
+    TweenLite.to(order, 0.5, {opacity:1, delay:1.2}); 
    
     TweenLite.delayedCall(3, home_animation.frame4);
   },
@@ -61,10 +66,10 @@ var home_animation = {
     TweenLite.delayedCall(0.4, home_animation.frame5);
   },
   frame5: function () {
-    TweenLite.to(is, 0.5, {opacity:1, delay:0});
-    TweenLite.to(safe, 0.5, {opacity:1, delay:0});
-    TweenLite.to(with_text, 0.5, {opacity:1, delay:0.4});  
-    TweenLite.to(us, 0.5, {opacity:1, delay:0.4});
+    TweenLite.to(is, 0.5, {opacity:1, scaleX:1, scaleY:1, delay:0});
+    TweenLite.to(safe, 0.5, {opacity:1,scaleX:1, scaleY:1, delay:.2});
+    TweenLite.to(with_text, 0.5, {opacity:1,scaleX:1, scaleY:1, delay:0.4});  
+    TweenLite.to(us, 0.5, {opacity:1,scaleX:1, scaleY:1, delay:0.6});
 
    TweenLite.delayedCall(2.2, home_animation.frame6);
   },
