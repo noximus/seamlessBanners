@@ -36,7 +36,7 @@ var BanTimeline = {
     document.getElementById("container").style.display = "block";
 
     // initial settings for banner frame 1.  In case banner needs to restart.  add as many as you can to CSS first so Banner doesn't jump
-    TweenLite.to(f4OrderNow, .4, {scaleX:1.5, scaleY:1.5});
+    TweenLite.to(f4OrderNow, 0, {scaleX:1.5,scaleY:1.5});
     TweenLite.to(your, 0, {scaleX:0, scaleY:0});
     // run animation after init is done. 
     BanTimeline.frame1();
@@ -46,12 +46,12 @@ var BanTimeline = {
   },
     frame1: function () {
     TweenLite.to(your, .2, {opacity:1, display: 'block', scaleX:1, scaleY:1, delay:.2, ease:Power2.easeOut});
-    TweenLite.to(tinyKitchen, .2, {opacity:1, display: 'block', delay:.3, ease:Power2.easeOut});
-    TweenLite.to(willThankYou, .2, {opacity:1, display: 'block', delay:.4, ease:Power2.easeOut});
-    TweenLite.to(star1, .2, {display:'block', opacity:1, delay:.8, ease:Power4.easeOut});
-    TweenLite.to(star2, .2, {display:'block', opacity:1, delay:.9, ease:Power4.easeOut});
-    TweenLite.to(star3, .2, {display:'block', opacity:1, delay:1, ease:Power4.easeOut});
-    TweenLite.to(star4, .2, {display:'block', opacity:1, delay:1.1, ease:Power4.easeOut});
+    TweenLite.to(tinyKitchen, .2, {opacity:1, display: 'block', delay:.6, ease:Power2.easeOut});
+    TweenLite.to(willThankYou, .2, {opacity:1, display: 'block', delay:.8, ease:Power2.easeOut});
+    TweenLite.to(star1, .2, {display:'block', opacity:1, delay:1, ease:Power4.easeOut});
+    TweenLite.to(star2, .2, {display:'block', opacity:1, delay:1.1, ease:Power4.easeOut});
+    TweenLite.to(star3, .2, {display:'block', opacity:1, delay:1.2, ease:Power4.easeOut});
+    TweenLite.to(star4, .2, {display:'block', opacity:1, delay:1.3, ease:Power4.easeOut});
     TweenLite.delayedCall(3.5, BanTimeline.frame2);
   },
   frame2: function () {
@@ -65,7 +65,7 @@ var BanTimeline = {
     TweenLite.to(f2_star2, .2, {opacity:1, display: 'block', delay: .8, ease:Power4.easeOut});
     TweenLite.to(f2_star3, .2, {opacity:1, display: 'block', delay: .9, ease:Power4.easeOut});
     TweenLite.to(f2_star4, .2, {opacity:1, display: 'block', delay: 1, ease:Power4.easeOut});
-    TweenLite.delayedCall(3, BanTimeline.frame3);
+    TweenLite.delayedCall(3.4, BanTimeline.frame3);
   },
   frame3: function () {
     TweenLite.to(frame2Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
@@ -79,7 +79,7 @@ var BanTimeline = {
     TweenLite.to(frame3Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
     TweenLite.to(f4Logo, .4, {opacity:1, display: 'block', delay: .3, ease:Power4.easeOut});
     TweenLite.to(f4NyEats, .4, {opacity:1, display: 'block', delay: .8, ease:Power4.easeOut});
-    TweenLite.to(f4OrderNow, .5, {opacity:1, display: 'block', scaleX:1, scaleY:1, delay: 1.3, ease:Power4.easeOut});
+    TweenLite.to(f4OrderNow, .5, {opacity:1, display: 'block',scaleX:1, scaleY:1, delay: 1.3, ease:Power4.easeOut});
   }
 };
 // If true, start function. If false, listen for INIT.
