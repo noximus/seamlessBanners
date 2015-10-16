@@ -23,10 +23,10 @@ var home_animation = {
     TweenLite.to(your, 0.1, {opacity:1, delay:1.4});
     TweenLite.to(secret, 0.1, {opacity:1, delay:1.8});
     TweenLite.to(ThreeAM, 0.1, {opacity:1, delay:2.4});
-    TweenLite.to(dumpling, 0.1, {opacity:1, delay:2.4});
-    TweenLite.to(and, 0.1, {opacity:1, delay:2.8});  
-    TweenLite.to(donuts, 0.1, {opacity:1, delay:3.2});
-    TweenLite.to(order, 0.1, {opacity:1, delay:3.2});
+    TweenLite.to(dumpling, 0.1, {opacity:1, delay:2.7});
+    TweenLite.to(and, 0.1, {opacity:1, delay:2.9});  
+    TweenLite.to(donuts, 0.1, {opacity:1, delay:3.3});
+    TweenLite.to(order, 0.1, {opacity:1, delay:3.5});
 
     TweenLite.delayedCall(5, home_animation.frame2);
   },
