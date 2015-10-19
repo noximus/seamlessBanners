@@ -57,7 +57,7 @@ var home_animation = {
 // If true, start function. If false, listen for INIT.
 window.onload = function() {
 
-home_animation.init()
+home_animation.init();
 
 }
 

@@ -1,15 +1,9 @@
 var home_animation = {
   boundEvents: {},  
   container: document.getElementById("container"),
-  bind: function (elem, eventName, callback) {if (elem.addEventListener) {elem.addEventListener(eventName, callback, false);}else if (elem.attachEvent) {var eID = elem.attachEvent('on'+ eventName, callback);boundEvents[eID] = { name: eventName, callback: callback };}},
   init: function () {
-    // CTA BTN CLICKTAG //
-    home_animation.bind(document.getElementById('click_screen'), 'click', function(e) 
-    {
-      e.preventDefault();
-      Enabler.exit("clickTag1");
-    });
-    document.getElementById("container").style.display = "block";
+    
+  document.getElementById("container").style.display = "block";
 
   TweenLite.to(is, 0, {opacity:0, scaleX:5, scaleY:5});
   TweenLite.to(safe, 0, {opacity:0, scaleX:5, scaleY:5});
@@ -87,6 +81,7 @@ var home_animation = {
   }
 };
 // If true, start function. If false, listen for INIT.
-window.onload = function() {if (Enabler.isInitialized()) {enablerInitHandler();} else {Enabler.addEventListener(studio.events.StudioEvent.INIT,enablerInitHandler);}}
-function enablerInitHandler(){home_animation.init();}
+window.onload = function() {
+  home_animation.init();
+}
 
