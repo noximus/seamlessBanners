@@ -14,11 +14,11 @@ var home_animation = {
   f2_Img01: document.getElementById("f2_Img01"),
   f2_Img02: document.getElementById("f2_Img02"),
   f2_Img03: document.getElementById("f2_Img03"),
-  f2_Img04: document.getElementById("f2_Img04"),
+  f2_Img04: document.getElementById("f2_Img04"),  
+  globalLogo: document.getElementById("globalLogo"),
   bind: function (elem, eventName, callback) {if (elem.addEventListener) {elem.addEventListener(eventName, callback, false);}else if (elem.attachEvent) {var eID = elem.attachEvent('on'+ eventName, callback);boundEvents[eID] = { name: eventName, callback: callback };}},
   init: function () {
     // CTA BTN CLICKTAG //
-   // home_animation.bind(container,'click',function(e){e.preventDefault();Enabler.exit("clickTag1");});
     TweenLite.to(container, 0, {opacity:1, display:'block'});      
     TweenLite.to(order_now, 0, {opacity:1, scaleX:0, scaleY:0});  
 
@@ -47,7 +47,6 @@ var home_animation = {
     TweenLite.to(f1_txt04, .5, {opacity:1, delay: .4, ease: Expo.easeOut});
     
     // Exit
-   // TweenLite.to(Frame1, 0.2, {opacity:0, delay: 2.8});
     TweenLite.delayedCall(3, home_animation.frame1Outro);
   },
   frame1Outro: function () {
@@ -106,6 +105,7 @@ var home_animation = {
     TweenLite.to(f2_Img02, .5, {opacity:0, delay: 0, left:300, ease: Expo.easeIn});
     TweenLite.to(f2_Img03, .5, {opacity:0, delay: 0, left:-300, ease: Expo.easeIn});
     TweenLite.to(f2_Img04, .5, {opacity:0, delay: .2, left:-300, ease: Expo.easeIn});
+    TweenLite.to(globalLogo, .3, {opacity:0, display:'none', delay: .4}); 
 
     TweenLite.to(Frame2, 0.5, {opacity:0, delay: 2.8});
     TweenLite.delayedCall(1, home_animation.frame3);
