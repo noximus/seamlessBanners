@@ -22,7 +22,14 @@ var BanTimeline = {
   frame1Wrap: document.getElementById("frame1Wrap"),
   frame2Wrap: document.getElementById("frame2Wrap"),
   frame3Wrap: document.getElementById("frame3Wrap"),
+  bind: function (elem, eventName, callback) {if (elem.addEventListener) {elem.addEventListener(eventName, callback, false);}else if (elem.attachEvent) {var eID = elem.attachEvent('on'+ eventName, callback);boundEvents[eID] = { name: eventName, callback: callback };}},
   init: function () {
+    // CTA BTN CLICKTAG //
+    BanTimeline.bind(document.getElementById('click_screen'), 'click', function(e) 
+    {
+      e.preventDefault();
+      Enabler.exit("clickTag1");
+    });
     document.getElementById("container").style.display = "block";
 
 // initial settings for banner frame 1.  In case banner needs to restart.  add as many as you can to CSS first so Banner doesn't jump
@@ -73,6 +80,5 @@ var BanTimeline = {
   }
 };
 // If true, start function. If false, listen for INIT.
-window.onload = function() {
-  BanTimeline.init();
-}
+window.onload = function() {if (Enabler.isInitialized()) {enablerInitHandler();} else {Enabler.addEventListener(studio.events.StudioEvent.INIT,enablerInitHandler);}}
+function enablerInitHandler(){BanTimeline.init();}
