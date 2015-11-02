@@ -12,12 +12,8 @@
 	overflow:hidden;
 	display: none;
 }
-
-body{
-	margin: 0px;
-}
-
-
+body{margin: 0px;}
+.show{position: absolute;display:block;opacity:1;}
 #your, #secret, #ThreeAM, #dumpling, #order, #donuts, #and,#safe, #logo, #how, #order_now  {
 position: absolute;
 top:0px;

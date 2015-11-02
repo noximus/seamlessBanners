@@ -1,12 +1,12 @@
 var home_animation = {
   boundEvents: {},  
   container: document.getElementById("container"),
+  globalLogo: document.getElementById("globalLogo"),
   init: function () {
-    
-  document.getElementById("container").style.display = "block";
+    document.getElementById("container").style.display = "block";
 
-  TweenLite.to(safe, 0, {opacity:0, scaleX:5, scaleY:5});
-  TweenLite.to(order_now, 0, {left:-10,opacity:1, scaleX:1.1, scaleY:1.1});  
+    TweenLite.to(safe, 0, {opacity:0, scaleX:5, scaleY:5});
+    TweenLite.to(order_now, 0, {left:-10,opacity:1, scaleX:1.1, scaleY:1.1});  
     home_animation.frame1();
   },
   reset: function () {    
@@ -48,6 +48,7 @@ var home_animation = {
   },
   frame6: function () {
     TweenLite.to(safe, 0.1, {opacity:0});
+    TweenLite.to(globalLogo, .2, {opacity:0, display:'none', delay: 0}); 
     TweenLite.to(logo, 0.3, {opacity:1, delay:.5});
     TweenLite.to(how, 0.3, {opacity:1, delay:.7});
     TweenLite.to(order_now, 0.3, {left:0,opacity:1, top:0, delay:.9, scaleX:1, scaleY:1});
