@@ -12,7 +12,11 @@
 	overflow:hidden;
 	display: none;
 }
-
+.show{
+    position: absolute;
+    display:block;
+    opacity:1;
+}
 body{
 	margin: 0px;
 }

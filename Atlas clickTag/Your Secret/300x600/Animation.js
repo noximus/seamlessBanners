@@ -1,6 +1,7 @@
 var home_animation = {
   boundEvents: {},  
   container: document.getElementById("container"),
+  globalLogo: document.getElementById("globalLogo"),
   init: function () {
     
   document.getElementById("container").style.display = "block";
@@ -67,10 +68,11 @@ var home_animation = {
   },
   frame5: function () {
     TweenLite.to(safe, 0.4, {opacity:1, scaleX:1, scaleY:1});
-
+    
     TweenLite.delayedCall(2.1, home_animation.frame6);
   },
   frame6: function () {
+    TweenLite.to(globalLogo, .2, {opacity:0, display:'none', delay: 0}); 
     TweenLite.to(safe, 0.1, {opacity:0});
     TweenLite.to(logo, 0.3, {opacity:1, delay:.5});
     TweenLite.to(how, 0.3, {opacity:1, delay:.7});
