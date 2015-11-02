@@ -1,15 +1,15 @@
 var home_animation = {
   boundEvents: {},  
   container: document.getElementById("container"),
+  globalLogo: document.getElementById("globalLogo"),
   init: function () {
-    
-  document.getElementById("container").style.display = "block";
+    document.getElementById("container").style.display = "block";
 
-  TweenLite.to(is, 0, {opacity:0, scaleX:5, scaleY:5});
-  TweenLite.to(safe, 0, {opacity:0, scaleX:5, scaleY:5});
-  TweenLite.to(with_text, 0, {opacity:0, scaleX:5, scaleY:5});  
-  TweenLite.to(us, 0, {opacity:0, scaleX:5, scaleY:5});
-  TweenLite.to(order_now, 0, {opacity:1, scaleX:0, scaleY:0});  
+    TweenLite.to(is, 0, {opacity:0, scaleX:2, scaleY:2});
+    TweenLite.to(safe, 0, {opacity:0, scaleX:2, scaleY:2});
+    TweenLite.to(with_text, 0, {opacity:0, scaleX:2, scaleY:2});  
+    TweenLite.to(us, 0, {opacity:0, scaleX:2, scaleY:2});
+    TweenLite.to(order_now, 0, {opacity:1, scaleX:0, scaleY:0});  
     home_animation.frame1();
   },
   reset: function () {    
@@ -71,6 +71,7 @@ var home_animation = {
     TweenLite.to(safe, 0.1, {opacity:0, delay:0});
     TweenLite.to(with_text, 0.1, {opacity:0, delay:0});  
     TweenLite.to(us, 0.1, {opacity:0, delay:0});
+    TweenLite.to(globalLogo, .2, {opacity:0, display:'none', delay: 0}); 
 
     TweenLite.delayedCall(0.4, home_animation.frame7);
   },
