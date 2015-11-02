@@ -25,6 +25,7 @@ var BanTimeline = {
   frame1Wrap: document.getElementById("frame1Wrap"),
   frame2Wrap: document.getElementById("frame2Wrap"),
   frame3Wrap: document.getElementById("frame3Wrap"),
+  globalLogo: document.getElementById("globalLogo"),
   bind: function (elem, eventName, callback) {if (elem.addEventListener) {elem.addEventListener(eventName, callback, false);}else if (elem.attachEvent) {var eID = elem.attachEvent('on'+ eventName, callback);boundEvents[eID] = { name: eventName, callback: callback };}},
   init: function () {
     // CTA BTN CLICKTAG //
@@ -65,17 +66,16 @@ var BanTimeline = {
     TweenLite.to(f2_star2, .2, {opacity:1, display: 'block', delay: .9, ease:Power4.easeOut});
     TweenLite.to(f2_star3, .2, {opacity:1, display: 'block', delay: 1, ease:Power4.easeOut});
     TweenLite.to(f2_star4, .2, {opacity:1, display: 'block', delay: 1.1, ease:Power4.easeOut});
-    TweenLite.delayedCall(3.4, BanTimeline.frame3);
-  },
-  frame3: function () {
-    TweenLite.to(frame2Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
-    TweenLite.to(f3Subletting, .2, {opacity:1, display:'block', delay:.2});
-    TweenLite.to(f3_star1, .2, {opacity:1, display: 'block', delay: .5, ease:Power4.easeOut});
-    TweenLite.to(f3_star2, .2, {opacity:1, display: 'block', delay: .7, ease:Power4.easeOut});
-    TweenLite.to(f3_star3, .2, {opacity:1, display: 'block', delay: .8, ease:Power4.easeOut});
+    
+    TweenLite.to(f3Subletting, .2, {opacity:1, display:'block', delay:1.2});
+    TweenLite.to(f3_star1, .2, {opacity:1, display: 'block', delay: 1.5, ease:Power4.easeOut});
+    TweenLite.to(f3_star2, .2, {opacity:1, display: 'block', delay: 1.7, ease:Power4.easeOut});
+    TweenLite.to(f3_star3, .2, {opacity:1, display: 'block', delay: 1.8, ease:Power4.easeOut});
     TweenLite.delayedCall(4, BanTimeline.frame4);
   },
-  frame4: function () {
+  frame4: function () {      
+    TweenLite.to(frame2Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
+    TweenLite.to(globalLogo, .2, {opacity:0, display:'none', delay: 0}); 
     TweenLite.to(frame3Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
     TweenLite.to(f4Logo, .4, {opacity:1, display: 'block', delay: .3, ease:Power4.easeOut});
     TweenLite.to(f4NyEats, .4, {opacity:1, display: 'block', delay: .8, ease:Power4.easeOut});
