@@ -16,7 +16,11 @@
 body{
 	margin: 0px;
 }
-
+.show{
+    position: absolute;
+    display:block;
+    opacity:1;
+}
 #building {
 position: absolute;
 top:0px;

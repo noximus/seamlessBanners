@@ -1,12 +1,11 @@
 var home_animation = {
   boundEvents: {},  
   container: document.getElementById("container"),
+  globalLogo: document.getElementById("globalLogo"),
   init: function () {
-    
-  document.getElementById("container").style.display = "block";
-
-  TweenLite.to(safe, 0, {opacity:0, top:-40, scaleX:5, scaleY:5});
-  TweenLite.to(order_now, 0, {opacity:1, scaleX:0, scaleY:0});  
+    document.getElementById("container").style.display = "block";
+    TweenLite.to(safe, 0, {opacity:0, top:-40, scaleX:5, scaleY:5});
+    TweenLite.to(order_now, 0, {opacity:1, scaleX:0, scaleY:0});  
     home_animation.frame1();
   },
   reset: function () {    
@@ -53,15 +52,18 @@ var home_animation = {
   },
   frame3: function () {
     TweenLite.to(safe, 0.4, {opacity:1, scaleX:1, scaleY:1});
-    TweenLite.to(logo, 0.3, {opacity:1, delay:2.7});
-    TweenLite.to(how, 0.3, {opacity:1, delay:3});
-    TweenLite.to(order_now, 0.3, {opacity:1, top:0, delay:3.2, scaleX:1, scaleY:1});
+    TweenLite.delayedCall(2, home_animation.frame4);
+  },
+  frame4: function (arguments) {
+    TweenLite.to(safe, 0.4, {opacity:0, scaleX:1, scaleY:1, delay:0});
+    TweenLite.to(globalLogo, .3, {opacity:0, display:'none', delay: .2});     
+    TweenLite.to(logo, 0.3, {opacity:1, delay:.4});
+    TweenLite.to(how, 0.3, {opacity:1, delay:.6});
+    TweenLite.to(order_now, 0.3, {opacity:1, top:0, delay:.8, scaleX:1, scaleY:1});
   }
 };
 // If true, start function. If false, listen for INIT.
 window.onload = function() {
-
-home_animation.init()
-
-}
+  home_animation.init();
+};
 
