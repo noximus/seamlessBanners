@@ -25,6 +25,7 @@ var BanTimeline = {
   f3Logo: document.getElementById("f3Logo"),
   f3NyEats: document.getElementById("f3NyEats"),
   f3OrderNow: document.getElementById("f3OrderNow"),
+  globalLogo: document.getElementById("globalLogo"),
   bind: function (elem, eventName, callback) {if (elem.addEventListener) {elem.addEventListener(eventName, callback, false);}else if (elem.attachEvent) {var eID = elem.attachEvent('on'+ eventName, callback);boundEvents[eID] = { name: eventName, callback: callback };}},
   init: function () {
     // CTA BTN CLICKTAG //
@@ -71,10 +72,12 @@ var BanTimeline = {
     TweenLite.to(f2Star3, .2, {opacity:1, display: 'block', delay: .8, ease:Power4.easeOut});
     TweenLite.to(f2Star4, .2, {opacity:1, display: 'block', delay: .9, ease:Power4.easeOut});
     TweenLite.to(f2Star5, .2, {opacity:1, display: 'block', delay: 1, ease:Power4.easeOut});
-    TweenLite.to(f2Star1, .2, {opacity:1, display: 'block', delay: 1.1, ease:Power4.easeOut});
+    TweenLite.to(f2Star1, .2, {opacity:1, display: 'block', delay: 1.1, ease:Power4.easeOut});    
+
     TweenLite.delayedCall(4, BanTimeline.frame3);
   },
   frame3: function () {
+    TweenLite.to(globalLogo, .2, {opacity:0, display:'none', delay: 0}); 
     TweenLite.to(frame2Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
     TweenLite.to(f3Logo, .4, {opacity:1, display: 'block', delay: .3, ease:Power4.easeOut});
     TweenLite.to(f3NyEats, .4, {opacity:1, display: 'block', delay: .8, ease:Power4.easeOut});

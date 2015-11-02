@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-
+body{margin: 0;}
 #container {
     position: absolute;
     width:298px;
@@ -11,11 +11,15 @@
     overflow:hidden;
     cursor: pointer;
 }
+.show{
+    position: absolute;
+    display:block;
+    opacity:1;
+}
 #utensil3{
     top:-118px;
     position: absolute;
 }
-
 #utensil1, #utensil2, #utensil4, #utensil5, #star1, #star2, #star3, #star4, #star5, #star6, #your, #tinykitchen, #thankyou, #f2Star1, #f2Star2, #f2Star3, #f2Star4, #f2Star5, #f2AndSoWill, #f2TheGuy, #f2SublettingIt, #f3Logo, #f3NyEats, #f3OrderNow{
     position: absolute;
     display:none;
@@ -23,6 +27,14 @@
 }
 #f3OrderNow{
     top:250px;
+}
+#frame1Wrap{
+    top: -10px;
+    position: absolute;
+}
+#frame2Wrap{
+    top: -25px;
+    position: absolute;
 }
 #bg {
     position: absolute;
