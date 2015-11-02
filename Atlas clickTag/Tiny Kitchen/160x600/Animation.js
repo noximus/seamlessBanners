@@ -22,6 +22,7 @@ var BanTimeline = {
   frame1Wrap: document.getElementById("frame1Wrap"),
   frame2Wrap: document.getElementById("frame2Wrap"),
   frame3Wrap: document.getElementById("frame3Wrap"),
+  globalLogo: document.getElementById("globalLogo"),
   bind: function (elem, eventName, callback) {if (elem.addEventListener) {elem.addEventListener(eventName, callback, false);}else if (elem.attachEvent) {var eID = elem.attachEvent('on'+ eventName, callback);boundEvents[eID] = { name: eventName, callback: callback };}},
   init: function () {
     // CTA BTN CLICKTAG //
@@ -64,16 +65,16 @@ var BanTimeline = {
     TweenLite.to(f2Star1, .2, {opacity:1, display: 'block', delay: .95, ease:Power4.easeOut});
     TweenLite.to(f2Star2, .2, {opacity:1, display: 'block', delay: 1.05, ease:Power4.easeOut});
     TweenLite.to(f2Star4, .2, {opacity:1, display: 'block', delay: 1.15, ease:Power4.easeOut});
+    TweenLite.to(f3Subletting, .2, {opacity:1, display:'block', delay:1.3});
+
     TweenLite.delayedCall(3.6, BanTimeline.frame3);
   },
   frame3: function () {
     TweenLite.to(frame2Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
-    TweenLite.to(f3Subletting, .2, {opacity:1, display:'block', delay:.2});
-    TweenLite.to(f3Subletting, 2.3, {left:-460, delay: 1, ease:Power1.easeInOut});
-    TweenLite.delayedCall(4.7, BanTimeline.frame4);
+    TweenLite.delayedCall(.4, BanTimeline.frame4);
   },
   frame4: function () {
-    TweenLite.to(frame3Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
+    TweenLite.to(globalLogo, .3, {opacity:0, display:'none', delay: .4}); 
     TweenLite.to(f4Logo, .4, {opacity:1, display: 'block', delay: .3, ease:Power4.easeOut});
     TweenLite.to(f4NyEats, .4, {opacity:1, display: 'block', delay: .8, ease:Power4.easeOut});
     TweenLite.to(f4OrderNow, .5, {opacity:1, display: 'block', scaleX:1, scaleY:1, delay: 1.3, ease:Power4.easeOut});
