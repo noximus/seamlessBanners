@@ -16,6 +16,7 @@ var BanTimeline = {
   frame3Wrap: document.getElementById("frame3Wrap"),
   frame4Wrap: document.getElementById("frame4Wrap"),
   frame5Wrap: document.getElementById("frame5Wrap"),
+  globalLogo: document.getElementById("globalLogo"),
   bind: function (elem, eventName, callback) {if (elem.addEventListener) {elem.addEventListener(eventName, callback, false);}else if (elem.attachEvent) {var eID = elem.attachEvent('on'+ eventName, callback);boundEvents[eID] = { name: eventName, callback: callback };}},
   init: function () {
      // CTA BTN CLICKTAG //
@@ -28,7 +29,7 @@ var BanTimeline = {
     // initial settings for banner frame 1.  In case banner needs to restart.  add as many as you can to CSS first so Banner doesn't jump
       TweenLite.to(your, 0, {left:-250,scaleX:0, scaleY:0});
       TweenLite.to(f5OrderNow, 0, {top:50,scaleX:1, scaleY:1.5});
-      TweenLite.to(f4Subletting, 0, {left:600, opacity:0, display:'none'});
+      // TweenLite.to(f4Subletting, 0, {left:600, opacity:0, display:'none'});
       TweenLite.to(f5Logo, 0, {left:-100});
       TweenLite.to(f5NyEats, 0, {left:-100});
     // run animation after init is done. 
@@ -55,17 +56,14 @@ var BanTimeline = {
     TweenLite.to(frame2Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
     TweenLite.to(f3andSoWill, .2, {opacity:1, display:'block', delay:.2});
     TweenLite.to(f3theGuy, .2, {opacity:1, display:'block', delay:.2});
-
-    TweenLite.delayedCall(3, BanTimeline.frame4);
-  },
-  frame4: function () {
-    TweenLite.to(frame3Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
-    TweenLite.to(f4Subletting, 1.4, {opacity:1, display:'block', delay:0, ease:Power4.easeOut});
+    TweenLite.to(f4Subletting, 1.4, {opacity:1, display:'block', delay:.6, ease:Power4.easeOut});
     TweenLite.to(f4Subletting, 1, {left:0, delay: 0, ease:Power1.easeInOut});
 
     TweenLite.delayedCall(3.5, BanTimeline.frame5);
   },
   frame5: function () {
+    TweenLite.to(frame3Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
+    TweenLite.to(globalLogo, .2, {opacity:0, display:'none', delay: 0}); 
     TweenLite.to(frame4Wrap, .2, {opacity:0, display: 'none', delay: 0, ease:Power4.easeOut});
     TweenLite.to(f5Logo, .4, {opacity:1, display: 'block', delay: .3, ease:Power4.easeOut});
     TweenLite.to(f5NyEats, .4, {opacity:1, display: 'block', delay: .8, ease:Power4.easeOut});

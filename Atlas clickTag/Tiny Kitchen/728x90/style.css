@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-
+body{margin: 0;}
 #container {
     position: absolute;
     width:726px;
@@ -11,7 +11,11 @@
     overflow:hidden;
     cursor: pointer;
 }
-
+.show{
+    position: absolute;
+    display:block;
+    opacity:1;
+}
 #f2Star1, #f2Star2, #f2Star3, #your, #tinyKitchen, #f2willThankYou, #f3andSoWill, #f3theGuy, #f4Subletting, #f5Logo, #f5NyEats, #f5OrderNow{
     position: absolute;
     display:none;
