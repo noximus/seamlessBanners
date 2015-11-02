@@ -5,6 +5,9 @@
 	position: absolute;
 	width: 160px;
 	height: 600px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 	background:#fcae1d;	
 	border:solid;
 	border-color:#000;
