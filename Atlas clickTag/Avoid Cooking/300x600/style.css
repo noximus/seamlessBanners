@@ -3,6 +3,9 @@
 body{margin: 0px;}
 #container {
 	position: absolute;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 	width: 300px;
 	height: 600px;
 	background:#d52430;	

@@ -30,8 +30,8 @@ var BanTimeline = {
       TweenLite.to(your, 0, {left:-250,scaleX:0, scaleY:0});
       TweenLite.to(f5OrderNow, 0, {top:50,scaleX:1, scaleY:1.5});
       // TweenLite.to(f4Subletting, 0, {left:600, opacity:0, display:'none'});
-      TweenLite.to(f5Logo, 0, {left:-100});
-      TweenLite.to(f5NyEats, 0, {left:-100});
+      // TweenLite.to(f5Logo, 0, {left:-100});
+      // TweenLite.to(f5NyEats, 0, {left:-100});
     // run animation after init is done. 
     BanTimeline.frame1();
   },

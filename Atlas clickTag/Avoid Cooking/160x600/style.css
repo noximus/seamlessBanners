@@ -3,6 +3,9 @@
 body{margin: 0px;}
 #container {
 	position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 	width: 160px;
 	height: 600px;
 	background:#d52430;	
@@ -15,17 +18,21 @@ body{margin: 0px;}
 }
 .hidden{
 	position: absolute;
-	top:0px;
-	left:0px;
 	opacity:0;
 }
 .show{
 	position: absolute;
-	top:0px;
-	left:0px;
 	opacity:1;
 }
 #Frame2 {
 	position: absolute;
 	top:-55px;
+}
+#hotdog {
+	position: absolute;
+	/*top:-25px;*/
+}
+#f2_txt01,#f2_txt03,#Frame1 {
+	position: absolute;
+	top:-25px;
 }

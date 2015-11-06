@@ -34,8 +34,6 @@ var home_animation = {
     TweenLite.to(order_now, 0, {opacity:1, top:250, scaleX:0, scaleY:0});  
     home_animation.frame1();
   },
-  reset: function () {    
-  },
   frame1: function () {
     TweenLite.to(f1_Img01, .5, {opacity:1, delay: .2, left:0, ease: Expo.easeOut});
     TweenLite.to(f1_Img02, .5, {opacity:1, delay: 0, left:0, ease: Expo.easeOut});
@@ -93,7 +91,7 @@ var home_animation = {
     TweenLite.to(f2_Img03, .5, {opacity:1, delay: 0, left:0, ease: Expo.easeOut});
     TweenLite.to(f2_Img04, .5, {opacity:1, delay: .2, left:0, ease: Expo.easeOut});        
 
-    TweenLite.delayedCall(3, home_animation.frame4);
+    // TweenLite.delayedCall(3, home_animation.frame4);
   },
   frame4: function () {
     TweenLite.to(hotdog, .3, {opacity:0, delay: 0.8, ease: Expo.easeOut});
